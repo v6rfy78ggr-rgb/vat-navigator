@@ -1,0 +1,37 @@
+const G='https://www.gesetze-im-internet.de/ustg_1980/';
+const D='https://www.gesetze-im-internet.de/ustdv_1980/';
+const E='https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02006L0112-20250414';
+export const SOURCES={
+ chain:{label:'§ 3 Abs. 6a UStG',url:G+'__3.html',detail:"Zunächst tatsächliche Lieferungen und eine einheitliche Beförderung feststellen. Anschließend den Transport nach Verantwortung und der vor Transportbeginn verwendeten USt-IdNr. des Abgangsstaats zuordnen."},
+ place:{label:'§ 3 Abs. 6, 7 UStG; Art. 31, 32 MwStSystRL',url:G+'__3.html',detail:"Die bewegte Lieferung liegt grundsätzlich am Abgangsort. Ruhende Lieferungen liegen vor der bewegten Lieferung am Abgangsort, danach am Bestimmungsort."},
+ export:{label:'§ 4 Nr. 1a, § 6 UStG',url:G+'__6.html',detail:"Materielle Voraussetzungen der Ausfuhrbefreiung. Bei Abholung den ausländischen Abnehmer prüfen; für privates Reisegepäck gelten Sonderbedingungen."},
+ ics:{label:'§ 4 Nr. 1b, § 6a UStG',url:G+'__6a.html',detail:"Abnehmer, gültige ausländische USt-IdNr., Warenbewegung und Zusammenfassende Meldung für innergemeinschaftliche Lieferungen prüfen."},
+ acquisition:{label:'§ 3d UStG; Art. 40, 41 MwStSystRL',url:G+'__3d.html',detail:"Erwerb im Bestimmungsstaat und zusätzlicher Erwerb im abweichenden Staat der USt-IdNr.; bei wirksamer Vereinfachungsregelung für Dreiecksgeschäfte gelten Sonderregeln."},
+ input:{label:'§ 15 Abs. 1 Nr. 1, 3, 4 UStG',url:G+'__15.html',detail:"Für gesetzlich geschuldete deutsche Umsatzsteuer, Erwerbsteuer bei Ankunft in Deutschland und Reverse Charge gelten jeweils eigene Vorsteuerbedingungen."},
+ invoice:{label:'§ 14 Abs. 4 UStG',url:G+'__14.html',detail:"Pflichtangaben, Steuerbetrag oder Befreiungshinweis. Ausländische Rechnungen nach dem jeweils anwendbaren Recht prüfen."},
+ invoiceSpecial:{label:'§ 14a Abs. 1, 3, 5, 7 UStG',url:G+'__14a.html',detail:"Besondere Rechnungspflichten für grenzüberschreitende Dienstleistungen, innergemeinschaftliche Lieferungen, Reverse Charge und Dreiecksgeschäfte."},
+ evidence:{label:'§§ 8–10, 13, 17a, 17b UStDV',url:D+'index.html',detail:"Ausfuhr-, Buch- und Gelangensnachweise. Eine Auswahl des Nutzers bedeutet keine Prüfung der Belege durch das Tool."},
+ eu:{label:'MwStSystRL 2006/112/EG',url:E,detail:"Art. 31/32 (Lieferort), 36a (EU-Reihengeschäft), 138 (innergemeinschaftliche Lieferung), 146 (Ausfuhr), 226 (Rechnung)."},
+ distance:{label:'§ 3c Abs. 1, 4, 5 UStG',url:G+'__3c.html',detail:"B2C-Fernverkauf, 10.000-EUR-Ausnahme und Ausschlüsse etwa für Montage. Zuerst die bewegte Lieferung der GmbH feststellen."},
+ oss:{label:"§ 18j UStG; OSS-Leitfaden der EU-Kommission",url:'https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en',detail:"Union-OSS und Voraussetzungen der 10.000-EUR-Ausnahme. Bei Versand aus einem anderen Mitgliedstaat greift die Ausnahme für ausschließlich in Deutschland ansässige Unternehmer nicht."},
+ ossLaw:{label:'§ 18j UStG',url:G+'__18j.html',detail:"Umfang und Teilnahme am Union-OSS. Gewöhnliche ruhende Inlandslieferungen sind nicht pauschal über OSS erklärbar."},
+ indirect:{label:"Art. 5a VO (EU) 282/2011 (Änderung durch VO 2019/2026)",url:'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R2026',detail:"Unmittelbare oder mittelbare Transportbeteiligung beim Fernverkauf; die Zahlung der Frachtkosten allein entscheidet nicht."},
+ triangle:{label:'§ 25b UStG; Art. 42, 141, 197 MwStSystRL',url:G+'__25b.html',detail:"Vereinfachungsregelung für Dreiecksgeschäfte: USt-IdNrn. aus drei Mitgliedstaaten, bewegte Eingangslieferung und keine Ansässigkeit des Zwischenhändlers im Bestimmungsstaat."},
+ triangleAdmin:{label:"UStAE 25b.1 Abs. 6, 8 · Verwaltungsanweisung",url:'https://ao.bundesfinanzministerium.de/usth/2024/A-Umsatzsteuergesetz/VI-Sonderregelungen/Paragraf-25b/ae-25b-1.html',detail:"Gesetzlicher Übergang der Steuerschuld bei erfüllten Bedingungen und materielle Rechnungsanforderungen; verlinkt ist das amtliche Handbuch 2024."},
+ triangleInvoice:{label:'§ 14a Abs. 7 UStG',url:G+'__14a.html',detail:"Hinweise auf Dreiecksgeschäft und Steuerschuld des Endabnehmers, beide USt-IdNrn. und kein gesonderter Steuerausweis."},
+ zm:{label:'§ 18a Abs. 1, 2, 7 Nr. 1/3/4, 10 UStG',url:G+'__18a.html',detail:"Zusammenfassende Meldung für innergemeinschaftliche Warenlieferungen, grenzüberschreitende B2B-Dienstleistungen und Dreiecksgeschäfte sowie Berichtigungspflichten."},
+ luxury:{label:'EuGH C-247/21 · Luxury Trust',url:'https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62021CJ0247',detail:"Der zentrale Rechnungshinweis ist eine materielle Voraussetzung. Eine nachträgliche Ergänzung wirkt nicht automatisch zurück."},
+ buehler:{label:'EuGH C-580/16 · Hans Bühler',url:'https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:62016CJ0580',detail:"Ansässigkeit oder Registrierung des Zwischenhändlers im Abgangsstaat schließt die Vereinfachung nicht automatisch aus; entscheidend ist die tatsächlich verwendete USt-IdNr."},
+ work:{label:'§ 3 Abs. 4 UStG; UStAE 3.8',url:G+'__3.html',detail:"Bearbeitung eines fremden Gegenstands mit selbst beschafften Hauptstoffen kann Werklieferung sein. Herstellung aus ausschließlich eigenen Stoffen genügt hierfür nicht."},
+ workAdmin:{label:"UStAE 3.8 · Verwaltungsanweisung",url:'https://usth.bundesfinanzministerium.de/usth/2023/A-Umsatzsteuergesetz/I-Steuergegenstand-und-Geltungsbereich/Paragraf-3/ae-3-8.html',detail:"Reparatur und Bearbeitung nach wirtschaftlichem Gehalt einordnen; der Materialwertanteil ist keine allgemeine starre Grenze."},
+ service:{label:'§ 3a Abs. 2, 3, 8 UStG',url:G+'__3a.html',detail:"B2B: empfangendes Unternehmen oder Betriebsstätte. B2C-Arbeiten an beweglichen Gegenständen: Abs. 3 Nr. 3a Buchst. b. Grundstücks- und Drittlandsnutzung gesondert prüfen."},
+ install:{label:'Art. 36 MwStSystRL; UStAE 3.12 Abs. 4',url:E,detail:"Eine erst am Zielort fertig montierte Lieferung liegt regelmäßig dort. Zerlegung und Wiederaufbau nur für den Transport ändern den Lieferort nicht automatisch."},
+ reverse:{label:'§ 13b Abs. 1, 2 Nr. 1/4, 5, 7 UStG',url:G+'__13b.html',detail:"Ausländische Werkleistungen, echte Werklieferungen und Bauleistungen getrennt prüfen. Montage eigener Maschinen löst nicht automatisch Reverse Charge aus."},
+ transfer:{label:'§ 3 Abs. 1a UStG; Art. 17 MwStSystRL',url:G+'__3.html',detail:"Eigenes innergemeinschaftliches Verbringen gesondert prüfen. Direkter Einkauf für eine Niederlassung derselben GmbH ist keine zweite Lieferung an diese."},
+ fixed:{label:'Art. 11 Abs. 3 VO (EU) 282/2011',url:'https://eur-lex.europa.eu/eli/reg/2011/282/oj?locale=de',detail:"Eine lokale USt-IdNr. allein begründet keine feste Niederlassung; die tatsächliche Einrichtung gesondert prüfen."},
+};
+export const EU={DE:"Deutschland",AT:"Österreich",BE:"Belgien",BG:"Bulgarien",HR:"Kroatien",CY:"Zypern",CZ:"Tschechien",DK:"Dänemark",EE:"Estland",FI:"Finnland",FR:"Frankreich",GR:"Griechenland",HU:"Ungarn",IE:"Irland",IT:"Italien",LV:"Lettland",LT:"Litauen",LU:"Luxemburg",MT:"Malta",NL:"Niederlande",PL:"Polen",PT:"Portugal",RO:"Rumänien",SK:"Slowakei",SI:"Slowenien",ES:"Spanien",SE:"Schweden"};
+export const THIRD={THIRD:"Drittland (konkretes Land noch prüfen)",CH:"Schweiz",GB:"Vereinigtes Königreich (ohne Waren-Sonderregeln für Nordirland)",US:"USA",CN:"China",TN:"Tunesien"};
+export const countries={...EU,...THIRD,UNKNOWN:"Noch offen",NONE:"Nicht verwendet / keine gültige USt-IdNr."};
+export const isEU=(c)=>Boolean(EU[c]);
+export const label=(c)=>countries[c]||"Noch offen";

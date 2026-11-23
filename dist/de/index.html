@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Grenzüberschreitende Umsatzsteuer der deutschen GmbH: Drittlands-, EU- und deutsche Kunden, EU-Niederlassungen, B2B/B2C, Dreiecksgeschäfte und Werkverträge.">
+ <meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light">
+ <title>VAT Navigator · Grenzüberschreitende Umsatzsteuer der GmbH</title>
+ <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+ <a href="#main" class="skip">Zum Hauptinhalt</a>
+ <aside class="sidebar">
+  <a class="brand" href="#" aria-label="VAT Navigator Startseite"><span class="brand-mark">V<span></span></span><div>VAT NAVIGATOR<small>Arbeitsplatz für grenzüberschreitende Umsatzsteuer</small></div></a>
+  <div class="nav-caption">ARBEITSBEREICH</div>
+  <nav aria-label="Hauptnavigation">
+   <button class="nav-item active" data-view="case"><span class="nav-icon">◈</span>Transaktion prüfen<span class="nav-arrow">↗</span></button>
+   <button class="nav-item" data-view="rules"><span class="nav-icon">▤</span>Regeln & Grenzen</button>
+   <button class="nav-item" data-view="validation"><span class="nav-icon">✓</span>Prüfprotokoll</button>
+  </nav>
+  <div class="side-note"><span class="side-dot"></span> Open-Source-Prüfprototyp<p>Aus Sicht der deutschen GmbH<br>DE / EU → DE / EU / Drittland</p></div>
+  <div class="side-bottom"><span>Regelversion 2.1</span><small>Geprüft am 05. NOV. 2026</small></div>
+ </aside>
+ <div class="workspace">
+  <header class="topbar"><div class="breadcrumb">Steuerarbeitsplatz <span>/</span> <strong id="breadcrumb">Transaktion prüfen</strong></div><div class="topbar-actions"><span class="private-pill">Berechnung im Browser</span><div class="language-switch" role="group" aria-label="Language / Sprache"><button type="button" data-language="zh" lang="zh-CN" aria-pressed="true">&#20013;&#25991;</button><button type="button" data-language="de" lang="de" aria-pressed="false">Deutsch</button></div></div></header>
+  <main id="main">
+   <section id="case-view">
+    <div class="page-heading"><div><div class="eyebrow">GRENZÜBERSCHREITENDE UMSATZSTEUER · VERSION 2.1</div><h1>Transaktionen verstehen.<span>Umsatzsteuer fundiert beurteilen.</span></h1><p>Einkauf, Weiterverkauf und Werkverträge anhand von Vertrag, Warenweg und verwendeten USt-IdNrn. prüfen.</p></div><div class="heading-meta">DEUTSCHLAND<span>GmbH · B2B / B2C</span></div></div>
+    <div class="preset-bar"><span class="preset-label">Beispiele laden</span><div id="presets"></div></div>
+    <div class="work-grid">
+     <section class="question-panel" aria-labelledby="question-title">
+      <div class="panel-top"><div><span class="tiny-label">EINGABE</span><h2 id="question-title">Transaktionsdaten</h2></div><button id="reset" class="text-btn">Zurücksetzen</button></div>
+      <div class="step-nav" id="steps" role="tablist" aria-label="Prüfschritte"></div>
+      <div id="question-body"></div>
+      <div class="wizard-footer"><span id="step-count"></span><div><button id="back" class="btn secondary">Zurück</button><button id="next" class="btn primary">Weiter <span>→</span></button></div></div>
+      <div class="input-note"><span>i</span>Nur Fakten auswählen; keine Kundennamen, Beträge oder echten Steuernummern eingeben.</div>
+     </section>
+     <section class="result-panel" aria-labelledby="result-title">
+      <div class="result-card"><div class="result-header"><span class="tiny-label">BEURTEILUNG</span><span id="result-status"></span></div><div class="result-route" id="route-label"></div><h2 id="result-title"></h2><p id="result-summary"></p><div class="result-facts"><div><span>Reihengeschäft</span><strong id="chain-result"></strong></div><div><span>Transportzuordnung · bewegte Lieferung</span><strong id="moving-result"></strong></div><div><span>Vertragsart · Einordnung</span><strong id="class-result"></strong></div><div><span>Sonderregel</span><strong id="special-result"></strong></div></div></div>
+      <div class="flow-card" id="flow"></div>
+      <div class="result-tabs" role="tablist" aria-label="Ergebnisdetails"><button class="active" data-result="overview" role="tab">Ergebnis & Aufgaben</button><button data-result="invoice" role="tab">Ein- & Ausgangsrechnung</button><button data-result="sources" role="tab">Rechtsgrundlagen <span>↗</span></button></div>
+      <div id="result-content" role="tabpanel" aria-live="polite"></div>
+      <div class="result-tools"><button class="btn secondary" id="copy-report">Prüfprotokoll kopieren <span>↗</span></button><button class="text-btn" id="show-record">Protokoll ansehen / speichern</button><button class="text-btn" id="print-report">Drucken</button></div>
+     </section>
+    </div>
+    <div class="scope-strip"><strong>Anwendungsbereich</strong><p>Regelbesteuerung · gewöhnliche Waren und genannte Werkverträge · B2B/B2C. Zuerst tatsächlichen Umsatz, dann Nummern und Sonderregeln prüfen. Ausländisches Recht, Belege und Nummerngültigkeit gesondert verifizieren.</p><button class="text-btn" data-view="rules">Prüfgrenzen ansehen ↗</button></div>
+   </section>
+   <section id="rules-view" hidden></section>
+   <section id="validation-view" hidden></section>
+   <footer class="main-footer"><span>VAT NAVIGATOR <b>/</b> Grenzüberschreitende Umsatzsteuer der deutschen GmbH</span><span>Rechtsstand geprüft: 05.11.2026 · keine laufende Aktualisierung</span></footer>
+  </main>
+ </div>
+ <dialog id="record-dialog"><div class="record-head"><div><span class="tiny-label">PRÜFPROTOKOLL</span><h2>Aktuelles Prüfprotokoll</h2></div><button class="text-btn" id="close-record">Schließen ×</button></div><p class="source-intro">Enthält Auswahl, feststellbare Ergebnisse, offene Punkte und Rechtsgrundlagen. Manuell kopieren oder als Text speichern.</p><textarea id="record-text" readonly aria-label="Text des Prüfprotokolls"></textarea><div class="record-actions"><button class="btn secondary" id="copy-record-text">Text kopieren</button><button class="btn primary" id="download-record">Als TXT speichern ↓</button></div></dialog><div id="toast" role="status"></div><div id="print-area"></div>
+ <script type="module" src="../language.mjs"></script>
+ <script type="module" src="./app.mjs"></script>
+</body>
+</html>

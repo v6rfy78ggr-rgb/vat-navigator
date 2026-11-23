@@ -1,0 +1,76 @@
+{
+  "name": "Bug / Fehler / 程序问题",
+  "description": "Report a reproducible problem / Fehler melden / 可复现问题",
+  "title": "[bug] ",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "English / Deutsch / 中文 welcome. Public report: use fictional data only. Keine Mandantendaten. 请勿上传客户资料。"
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "Version and environment / Version und Umgebung / 版本与环境",
+        "placeholder": "Project version; browser or Excel version; OS"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "scenario",
+      "attributes": {
+        "label": "Scenario and steps / Sachverhalt und Schritte / 场景与步骤",
+        "description": "Use a minimal fictional example. Include dates, units and currencies when relevant."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "expected",
+      "attributes": {
+        "label": "Expected result / Erwartetes Ergebnis / 预期结果"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "actual",
+      "attributes": {
+        "label": "Actual result or improvement / Ergebnis oder Verbesserung / 实际结果或改进建议"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "source",
+      "attributes": {
+        "label": "Evidence and source / Nachweis und Quelle / 证据与来源",
+        "description": "For rule changes: jurisdiction, applicable period, official URL and relevant provision. No confidential attachments."
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "privacy",
+      "attributes": {
+        "label": "Public data / Öffentliche Daten / 公开资料",
+        "options": [
+          {
+            "label": "I used fictional data and removed confidential content. / Nur fiktive Daten. / 已使用虚构数据。",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}

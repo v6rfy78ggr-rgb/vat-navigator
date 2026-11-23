@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="德国GmbH跨境VAT判断：第三国及欧盟客户、德国客户、欧盟分支、B2B/B2C、三角交易和工程合同。">
+ <meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light">
+ <title>VAT Navigator · 德国 GmbH 跨境 VAT 判断</title>
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <a href="#main" class="skip">跳至主要内容</a>
+ <aside class="sidebar">
+  <a class="brand" href="#" aria-label="VAT Navigator 首页"><span class="brand-mark">V<span></span></span><div>VAT NAVIGATOR<small>跨境 VAT 判断工作台</small></div></a>
+  <div class="nav-caption">工作空间</div>
+  <nav aria-label="主要导航">
+   <button class="nav-item active" data-view="case"><span class="nav-icon">◈</span>交易判断<span class="nav-arrow">↗</span></button>
+   <button class="nav-item" data-view="rules"><span class="nav-icon">▤</span>规则与边界</button>
+   <button class="nav-item" data-view="validation"><span class="nav-icon">✓</span>验证记录</button>
+  </nav>
+  <div class="side-note"><span class="side-dot"></span> 开源筛查原型<p>德国 GmbH 视角<br>DE / EU → DE / EU / 第三国</p></div>
+  <div class="side-bottom"><span>规则版本 2.1</span><small>核对日期 05 NOV 2026</small></div>
+ </aside>
+ <div class="workspace">
+  <header class="topbar"><div class="breadcrumb">税务工作台 <span>/</span> <strong id="breadcrumb">交易判断</strong></div><div class="topbar-actions"><span class="private-pill">本地浏览器计算</span><div class="language-switch" role="group" aria-label="Language / Sprache"><button type="button" data-language="zh" lang="zh-CN" aria-pressed="true">&#20013;&#25991;</button><button type="button" data-language="de" lang="de" aria-pressed="false">Deutsch</button></div></div></header>
+  <main id="main">
+   <section id="case-view">
+    <div class="page-heading"><div><div class="eyebrow">CROSS-BORDER VAT · VERSION 2.1</div><h1>把交易说清楚，<span>让 VAT 有据可循。</span></h1><p>从合同、物流与所用 VAT 号出发，判断采购、转售与工程交易。</p></div><div class="heading-meta">DEUTSCHLAND<span>GmbH · B2B / B2C</span></div></div>
+    <div class="preset-bar"><span class="preset-label">快速载入示例</span><div id="presets"></div></div>
+    <div class="work-grid">
+     <section class="question-panel" aria-labelledby="question-title">
+      <div class="panel-top"><div><span class="tiny-label">INPUT</span><h2 id="question-title">交易事实</h2></div><button id="reset" class="text-btn">重置</button></div>
+      <div class="step-nav" id="steps" role="tablist" aria-label="判断步骤"></div>
+      <div id="question-body"></div>
+      <div class="wizard-footer"><span id="step-count"></span><div><button id="back" class="btn secondary">上一步</button><button id="next" class="btn primary">下一步 <span>→</span></button></div></div>
+      <div class="input-note"><span>i</span>只选择事实，无需输入客户名称、金额或真实税号。</div>
+     </section>
+     <section class="result-panel" aria-labelledby="result-title">
+      <div class="result-card"><div class="result-header"><span class="tiny-label">ASSESSMENT</span><span id="result-status"></span></div><div class="result-route" id="route-label"></div><h2 id="result-title"></h2><p id="result-summary"></p><div class="result-facts"><div><span>Reihengeschäft</span><strong id="chain-result"></strong></div><div><span>运输归属 · bewegte Lieferung</span><strong id="moving-result"></strong></div><div><span>合同性质 · classification</span><strong id="class-result"></strong></div><div><span>专项规则 · special scheme</span><strong id="special-result"></strong></div></div></div>
+      <div class="flow-card" id="flow"></div>
+      <div class="result-tabs" role="tablist" aria-label="结果详情"><button class="active" data-result="overview" role="tab">判断与待办</button><button data-result="invoice" role="tab">开票与收票</button><button data-result="sources" role="tab">法条依据 <span>↗</span></button></div>
+      <div id="result-content" role="tabpanel" aria-live="polite"></div>
+      <div class="result-tools"><button class="btn secondary" id="copy-report">复制判断记录 <span>↗</span></button><button class="text-btn" id="show-record">查看 / 保存记录</button><button class="text-btn" id="print-report">打印</button></div>
+     </section>
+    </div>
+    <div class="scope-strip"><strong>使用范围</strong><p>一般征税 · 普通货物及所列工程合同 · B2B / B2C。先确认真实交易，再检查号码与特别制度；外国法、实际凭证及号码有效性须另行核实。</p><button class="text-btn" data-view="rules">查看判断边界 ↗</button></div>
+   </section>
+   <section id="rules-view" hidden></section>
+   <section id="validation-view" hidden></section>
+   <footer class="main-footer"><span>VAT NAVIGATOR <b>/</b> 德国 GmbH 跨境 VAT 判断</span><span>法条核对：2026.11.05 · 非实时法律更新</span></footer>
+  </main>
+ </div>
+ <dialog id="record-dialog"><div class="record-head"><div><span class="tiny-label">ASSESSMENT RECORD</span><h2>当前判断记录</h2></div><button class="text-btn" id="close-record">关闭 ×</button></div><p class="source-intro">包含本次选择、确定结论、待核实事项及法条。可手动选择复制，或保存为文本。</p><textarea id="record-text" readonly aria-label="判断记录文本"></textarea><div class="record-actions"><button class="btn secondary" id="copy-record-text">复制文本</button><button class="btn primary" id="download-record">保存为 TXT ↓</button></div></dialog><div id="toast" role="status"></div><div id="print-area"></div>
+ <script type="module" src="./language.mjs"></script>
+ <script type="module" src="./app.mjs"></script>
+</body>
+</html>

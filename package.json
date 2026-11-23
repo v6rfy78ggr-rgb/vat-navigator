@@ -1,0 +1,10 @@
+{
+  "name": "gmbh-vat-navigator",
+  "version": "2.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "node tests.mjs && node tests-language.mjs",
+    "build:locales": "node scripts/localize.mjs"
+  },
+  "private": true
+}

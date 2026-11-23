@@ -2,6 +2,8 @@
 
 [English](README.md) · [Deutsch](README.de.md) · [简体中文](README.zh-CN.md)
 
+[Projektübersicht](https://v6rfy78ggr-rgb.github.io/v6rfy78ggr-rgb/de.html) · [Kurzer Einstieg](TRY_IT.md) · [Versionen](https://github.com/v6rfy78ggr-rgb/vat-navigator/releases) · [Demo öffnen](https://v6rfy78ggr-rgb.github.io/vat-navigator/)
+
 Ein browserbasiertes Werkzeug zur Vorprüfung grenzüberschreitender Einkäufe und Verkäufe aus Sicht einer deutschen GmbH. Aus ausgewählten Sachverhaltsangaben entstehen eine nachvollziehbare Einordnung, offene Voraussetzungen, Hinweise zur Rechnungsstellung und Links zu amtlichen Quellen.
 
 ## Ausprobieren

@@ -2,6 +2,8 @@
 
 [English](README.md) · [Deutsch](README.de.md) · [简体中文](README.zh-CN.md)
 
+[Project hub](https://v6rfy78ggr-rgb.github.io/v6rfy78ggr-rgb/) · [One-minute first look](TRY_IT.md) · [Version downloads](https://github.com/v6rfy78ggr-rgb/vat-navigator/releases) · [Open demo](https://v6rfy78ggr-rgb.github.io/vat-navigator/)
+
 A browser-based screening tool for cross-border purchases and sales from a German GmbH's perspective. It turns selected facts into a traceable assessment, open conditions, invoice guidance and official-source links.
 
 ## Try it

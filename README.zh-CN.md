@@ -2,6 +2,8 @@
 
 [English](README.md) · [Deutsch](README.de.md) · [简体中文](README.zh-CN.md)
 
+[项目入口](https://v6rfy78ggr-rgb.github.io/v6rfy78ggr-rgb/zh-CN.html) · [一分钟试用](TRY_IT.md) · [版本下载](https://github.com/v6rfy78ggr-rgb/vat-navigator/releases) · [打开演示](https://v6rfy78ggr-rgb.github.io/vat-navigator/)
+
 从德国 GmbH 角度梳理跨境采购和销售 VAT 的浏览器工具。根据事实选项生成判断路径、未满足条件、开票提示和官方来源链接，方便专业人员复核。
 
 ## 如何试用
